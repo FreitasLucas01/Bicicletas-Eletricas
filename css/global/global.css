@@ -1,0 +1,29 @@
+body{
+    font-family: "Poppins" , sans-serif;
+    margin: 0;
+}
+
+h1,h2,h3,h4,p,ul,li,blockquote,dl,dt,dd{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: currentColor;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+img[src$=".jpg"]{
+    border-radius: 4px;
+}
+

@@ -1,0 +1,22 @@
+.seguros-titulo{
+    background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
+    padding-bottom: 60px;
+}
+
+@media(max-width: 800px){
+    .seguros-bg{
+        padding: 40px 0 60px 0;
+    }
+    .seguros-titulo{
+        padding-bottom: 40px;
+    }
+}
+
+@media(max-width: 400px){
+    .seguros-titulo{
+        background: none;
+    }
+}
+
+
+

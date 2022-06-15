@@ -1,0 +1,47 @@
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    color: var(--cor-11);
+}
+
+.form label{
+    display: block;
+    font: 400 1rem/1.5 "Poppins" , sans-serif;
+    margin-bottom: 4px;
+}
+
+.form input,
+.form textarea{
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    font: 400 1rem/1.5 "Roboto" , sans-serif;
+    border-radius: 4px;
+    border: solid 1px var(--cor-2);
+    background: var(--cor-1);
+}
+
+.form input:focus,
+.form textarea:focus{
+    outline: none;
+    border-color: var(--cor-p1);
+    box-shadow: 0 0 0 2px #fea;
+    background: var(--cor-0);
+}
+
+
+.form button{
+    border: none;
+    max-width: max-content;
+}
+
+.col-all{
+    grid-column: 1/-1;
+}
+
+@media(max-width: 600px){
+    .form{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,48 @@
+.termos-titulo-bg{
+    background: var(--cor-11);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 80px;
+}
+
+.termos-titulo{
+    background: url("../../img/dec/top-right.svg")
+     no-repeat top right 20px;
+}
+
+.termos-detalhes{
+    margin-bottom: 104px;
+}
+
+.termos-detalhes h2{
+    margin-bottom: 20px;
+}
+
+.termo-conta-h2,
+.termo-seguro-h2{
+    margin-top: 40px;
+}
+
+.termos p{
+    max-width: 74ch;
+    margin-bottom: 24px;
+}
+
+
+@media(max-width: 800px){
+    .termos-titulo-bg{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .termos-detalhes{
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 400px){
+    .termos-titulo{
+        background: none;
+    }
+}

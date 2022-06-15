@@ -1,0 +1,58 @@
+.js .up-slide{
+  animation: up-slide 1s forwards;
+}
+
+.js .up-slide2{
+  animation: up-slide 1s forwards ease-in;
+}
+
+.js .left-slide{
+  animation: left-slide 1s forwards;
+}
+
+.js .right-slide{
+  animation: right-slide 1s forwards;
+}
+
+.js .right-slide2{
+  animation: right-slide 1s forwards ease-in;
+}
+
+@keyframes up-slide{
+  from{
+    opacity: 0;
+    transform: translate3d(0, -30px , 0);
+  }
+
+  to{
+    opacity: 1;
+    transform: none;
+    transition: transform 0.8s, opacity 0.8s;
+  }
+}
+
+@keyframes left-slide{
+  from{
+    opacity: 0;
+    transform: translate3d(-30px, 0 , 0);
+  }
+
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0 , 0);
+    transition: transform 0.8s, opacity 0.8s;
+  }
+}
+
+@keyframes right-slide{
+  from{
+    opacity: 0;
+    transform: translate3d(30px, 0 , 0);
+  }
+
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0 , 0);
+    transition: transform 0.8s, opacity 0.8s;
+  }
+}

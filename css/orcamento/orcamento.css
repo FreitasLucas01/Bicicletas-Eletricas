@@ -1,0 +1,218 @@
+#orcamento{
+    background: linear-gradient(var(--cor-11) 600px , var(--cor-1) 0);
+}
+
+.orcamento{
+    margin-bottom: 120px;
+}
+
+.orcamento-titulo{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: url("../../img/dec/top-right.svg") no-repeat top 60px right;
+}
+
+.orcamento-form{
+    display: grid;
+    gap: 0;
+    grid-template-columns: 5fr 7fr;
+}
+
+.orcamento-escolha,
+.orcamento-detalhes{
+    padding: 60px;
+}
+
+.orcamento-escolha{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    gap: 20px;
+    background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat bottom 20px left 20px;
+    border-radius: 4px 0 0 4px;
+}
+
+#bikcraft:checked ~ .orcamento-bicicletas,
+#seguro:checked ~ .orcamento-seguros{
+    display: block;
+}
+
+.orcamento-escolha input{
+    pointer-events: none;
+    position: absolute;
+    display: none;
+}
+
+.orcamento-escolha label{
+    background: var(--cor-10);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    border: 1px solid var(--cor-10);
+}
+
+.orcamento-escolha label::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--cor-6);
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-right: 8px;
+}
+
+.orcamento-escolha input:checked + label{
+    background-color: var(--cor-0);
+    color: var(--cor-10);
+    box-shadow: 0 0 0 2px var(--cor-p1);
+}
+
+.orcamento-escolha input:checked + label::before{
+    box-shadow: inset 0 0 0 3px var(--cor-0) , inset 0 0 0 6px var(--cor-7);
+}
+
+.orcamento-detalhes{
+    background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat bottom 20px right 20px;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0  1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-form h2{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.orcamento-form h2::before{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+    background: var(--cor-p1);
+    left: -12px;
+    position: absolute;
+}
+
+.orcamento-escolha label{
+    font: 400 1rem/1.5 "Poppins" , sans-serif;
+    color: var(--cor-4);
+}
+
+.orcamento-dados{
+    margin-bottom: 40px;
+}
+
+.orcamento-entrega{
+    margin-bottom: 20px;
+}
+
+.orcamento-bicicletas{
+    display: none;
+    margin-top: 20px;
+}
+
+.orcamento-bicicletas label{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.orcamento-bicicletas h2,
+.orcamento-bicicletas div{
+    margin-bottom: 20px;
+}
+
+.orcamento-bicicletas span,
+.orcamento-seguros span{
+    display: none;
+}
+
+.orcamento-bicicletas input:checked + label span,
+.orcamento-seguros input:checked + label span{
+    display: inline;
+}
+
+#nimbus:checked ~ div,
+#magic:checked ~ div,
+#nebula:checked ~ div{
+    display: grid;
+}
+
+.orcamento-bike > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    background: var(--cor-0);
+    display: none;
+}
+
+.orcamento-bike > div li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.orcamento-bike > div li img{
+    width: 16px;
+}
+
+.orcamento-seguros{
+    display: none;
+    margin-top: 20px;
+}
+
+.orcamento-seguros label{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.orcamento-seguros h2,
+.orcamento-seguros label{
+    margin-bottom: 20px;
+}
+
+@media(max-width: 1200px){
+    .orcamento-titulo{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .orcamento-escolha,
+    .orcamento-detalhes{
+    padding: 32px;
+  }
+}
+
+@media(max-width: 800px){
+    .orcamento-titulo{
+        background: url("../../img/dec/top-right.svg") no-repeat top 40px right;
+    }
+
+    .orcamento-escolha{
+        background: var(--cor-12);
+    }
+    .orcamento-form{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 400px){
+    .orcamento-titulo{
+        background: none;
+    }
+
+    .orcamento-detalhes{
+        background: var(--cor-0);
+    }
+
+    .orcamento-escolha{
+        grid-template-columns: 1fr;
+    }
+}
